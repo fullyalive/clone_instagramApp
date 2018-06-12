@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { View, Text, StatusBar, StyleSheet } from "react-native";
 import LoggedOutNavigation from "../../navigation/LoggedOutNavigation";
@@ -24,3 +24,5 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff"
   }
 });
+
+export default AppContainer;
