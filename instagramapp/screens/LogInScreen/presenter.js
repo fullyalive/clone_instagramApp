@@ -42,14 +42,14 @@ const LogInScreen = props => (
         value={props.password}
         onChangeText={props.changePassword}
         returnKeyType={"send"}
-        onEndEditing={props.submit}
+        onSubmitEditing={props.submit}
       />
       <TouchableOpacity style={styles.touchable} onPressOut={props.submit}>
         <View style={styles.button}>
-          {props.isSubmitting} ? (
-          <ActivityIndicator size="small" color="white" />
+          {props.isSubmitting ? (
+            <ActivityIndicator size="small" color="white" />
           ) : (
-          <Text style={styles.btnText}>Log In</Text>
+            <Text style={styles.btnText}>Log In</Text>
           )}
         </View>
       </TouchableOpacity>

@@ -28,7 +28,7 @@ class Container extends Component {
     this.setState({ username: text });
   };
   _changePassword = text => {
-    this.setState({ username: text });
+    this.setState({ password: text });
   };
   _submit = async () => {
     const { username, password, isSubmitting } = this.state;

@@ -86,7 +86,6 @@ function facebookLogin() {
           }
         });
     }
-    console.log(type, token);
   };
 }
 // Initial State
