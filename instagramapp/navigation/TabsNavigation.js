@@ -7,7 +7,7 @@ import NotificationsRoute from "../routes/NotificationsRoute";
 import ProfileRoute from "../routes/ProfileRoute";
 import { Ionicons } from "@expo/vector-icons";
 
-const TabBarComponent = (props) => (
+const TabBarComponent = props => (
   <BottomTabBar {...props} />
 );
 
