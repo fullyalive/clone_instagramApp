@@ -1,11 +1,15 @@
 import React from "react";
 import { View } from "react-native";
-import { createBottomTabNavigator } from "react-navigation";
+import { createBottomTabNavigator, BottomTabBar } from "react-navigation-tabs";
 import HomeRoute from "../routes/HomeRoute";
 import SearchRoute from "../routes/SearchRoute";
 import NotificationsRoute from "../routes/NotificationsRoute";
 import ProfileRoute from "../routes/ProfileRoute";
 import { Ionicons } from "@expo/vector-icons";
+
+const TabBarComponent = (props) => (
+  <BottomTabBar {...props} />
+);
 
 const TabsNavigation = createBottomTabNavigator(
   {
